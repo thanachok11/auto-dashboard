@@ -1,0 +1,33 @@
+Test Site : 10.10.200.106:8011,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Test ID,Test Scenario,,Test Case,,,,Expected Result,,Actual Result,,Status,Note
+,,,,,,,,,,,,
+T001,ทดสอบ Frequency,,กรอกเวลาการกินยาว่าตรงกับเวลาปกติหรือไม่,,,,"1C : พร้อมอาหารเช้า เวลาควรจะเป็น 08.00
+ไม่ใช่ 00.00
+
+1M : เช้า เวลาควรจะเป็น 08.00
+ไม่ใช่ 00.00
+
+1MD : เย็น เวลาควรจะเป็น 18.00
+ไม่ใช่ 00.00
+
+",,,,Error,http://10.10.200.110:8012/ProductRESTService.svc/MobileUpdateIPDDrugCont
+,,,,,,,,,,,,
+T002,Edit off medicine,,ลองกองแก้ไขข้อมูลในหน้า off ว่าจะแก้ไขได้หรือไม่,,,,แก้ไขข้อมูลสำเร็จ,,OrderNo cannot be empty.,,Error,
+,,,,,,,,,,,,
+T003,Cancle Consultation Request,,ทดลองลบข้อมูลที่พึ่งกรอกไปว่าสามารถลบได้หรือไม่,,,,ลบข้อมูลสำเร็จ,,"""(204) Table HNCONSULT_HEADER Error: String or binary data would be truncated.\r\nThe statement has been terminated.; Command : UPDATE HNCONSULT_HEADER SET REQUESTNO = N'COI25-0010',CXLDATETIME = '2025-4-29 16:6:59:744',CXLBYUSERCODE = N'JOKEYMED',CXLREASONCODE = N'CXL-001',AN = N'6755509',TODOCTOR = N'100',TODEPARTMENT = N'1100' WHERE  RequestNo = N'COI25-0010' """,,Error,http://10.10.200.110:8012/ProductRESTService.svc/MobileCancelConsultation
+,,,,,,,,,,,,
+T004,"Add / Edit
+Recuring Meal Order",,"เพิ่มข้อมูลลงไปแล้วข้อมูลถูกส่งไปแล้ว
+ข้อมูลจะแสดงหรือไม่",,,,ข้อมุลทั้งหมดที่พิมพ์ไปแสดงกลับมา,,"IPD Remark
+ไม่แสดงข้อมูล",,Error,http://10.10.200.110:8012/ProductRESTService.svc/MobileUpdateIpdMealRecurring
+,,,,,,,,,,,,
+T005,"Order Medicine
+Edit
+กรอกข้อมูลยา",,"ลองสั่งยากแล้วคลิกEdit และคลิกตัวยาเพื่อดูข้อมูล
+ยาที่สั้งว่าตรงกันหรือไม่ ",,,,ข้อมูลทั้งหมดต้องตรงกันกับที่ใส่เข้าไปตอนแรก,,"Reason 
+ไม่แสดงกลับมาทั้งๆที่
+ในAPI มีข้อมูล",,Error,http://10.10.200.110:8012/ProductRESTService.svc/MobileUpdateIpdMealRecurring

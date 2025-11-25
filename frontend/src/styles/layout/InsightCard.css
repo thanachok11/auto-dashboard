@@ -1,0 +1,26 @@
+.insightcard {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.insightcard-title {
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.insightcard-summary {
+    color: #334155;
+    line-height: 1.6;
+}
+
+.insightcard-ai {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #475569;
+    font-style: italic;
+}

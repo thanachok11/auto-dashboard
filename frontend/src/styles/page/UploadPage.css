@@ -1,0 +1,43 @@
+.upload-container {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: "Kanit", sans-serif;
+}
+
+.upload-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 20px;
+}
+
+.upload-input {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    width: 250px;
+    margin-bottom: 16px;
+}
+
+.upload-button {
+    display: block;
+    margin: 0 auto;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.upload-button:hover {
+    background: #1d4ed8;
+}
+
+.upload-status {
+    margin-top: 16px;
+    color: #334155;
+    font-size: 14px;
+}

@@ -1,0 +1,40 @@
+.filelist-container {
+    margin-top: 30px;
+}
+
+.filelist-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.filelist-empty {
+    color: #94a3b8;
+}
+
+.filelist-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filelist-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.filelist-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.filelist-link:hover {
+    text-decoration: underline;
+}

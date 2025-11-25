@@ -1,0 +1,31 @@
+.insight-container {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Kanit", sans-serif;
+}
+
+.insight-title {
+    font-size: 28px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.insight-button {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+.insight-button:hover {
+    background: #059669;
+}
+
+.insight-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
